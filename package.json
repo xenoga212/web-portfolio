@@ -1,0 +1,14 @@
+{
+  "name": "web-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/main.scss -o dist/css"
+  },
+  "author": "angel",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
