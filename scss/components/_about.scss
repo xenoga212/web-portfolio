@@ -1,0 +1,28 @@
+.about {
+  margin: 3rem 0;
+
+  &__header {
+    font-size: 2.7rem;
+    text-align: center;
+  }
+
+  &__description-box {
+    margin-top: 2.5rem;
+  }
+
+  &__intro-header {
+    margin: 0 1rem;
+    font-size: 2rem;
+  }
+
+  &__skills-header {
+    margin: 0 1rem;
+    font-size: 2rem;
+  }
+
+  &__description {
+    padding: 1.2rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+  }
+}

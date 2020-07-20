@@ -1,9 +1,8 @@
 .navigation {
-
   // navigation overlay
   position: fixed;
   top: 0;
-  width: 100%;
+  min-width: 100%;
   opacity: 0.9;
   visibility: hidden;
 
@@ -21,11 +20,10 @@
     margin: 0;
     padding: 0;
     background: #fff;
-    opacity: .9;
-
+    opacity: 0.9;
+    min-width: 22.5rem;
 
     li {
-
       font-size: 1.8rem;
       margin: 0 3px;
       line-height: 1.5;
@@ -44,25 +42,25 @@
   z-index: 3;
   right: 1.5rem;
   top: 1.5rem;
-  background: #fff;
+  // background: #fff;
 
   .button-line {
     width: 2.8rem;
-    height: .3rem;
-    margin: 0 0 .5rem 0;
+    height: 0.3rem;
+    margin: 0 0 0.5rem 0;
     background: #000;
   }
 
   // rotate into an X with button lines
   &.close {
     transform: rotate(180deg);
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 
     .button-line {
 
       // line 1 - Rotate
       &:nth-child(1) {
-        transform: rotate(45deg) translate(.5rem, .5rem);
+        transform: rotate(45deg) translate(0.5rem, 0.5rem);
         background: #000;
       }
 
@@ -73,7 +71,7 @@
 
       // line 3 - Rotate
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(.7rem, -.6rem);
+        transform: rotate(-45deg) translate(0.7rem, -0.6rem);
         background: #000;
       }
     }
@@ -84,12 +82,15 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
+  min-width: 22.5rem;
+  background: inherit;
 }
 
 .logo {
   display: flex;
   padding: 1.7rem 0;
   margin: 0 1.5rem;
+  min-width: 22.5rem;
 
   a {
     text-decoration: none;
