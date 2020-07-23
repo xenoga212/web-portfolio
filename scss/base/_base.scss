@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+  background: #222233;
+
 
   &:after {
     content: '';

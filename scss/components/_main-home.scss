@@ -3,12 +3,36 @@ main {
   overflow: hidden;
   min-width: 22.5rem;
 
+  .home__resume {
+    font-size: 2rem;
+    margin-top: 2rem;
+    border: .3rem solid #fff;
+    padding: .8rem;
+    width: 51%;
+    margin-left: 6rem;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
   .social-media {
     padding: 1.3rem;
 
     a {
       font-size: 1.5rem;
+      text-decoration: none;
 
+    }
+
+    &__github {
+      color: #fff;
+      margin-right: 1.5rem;
+    }
+
+    &__linkedin {
+      color: #0077b5;
     }
   }
 }
@@ -18,9 +42,11 @@ main {
   padding: 1rem 0;
   margin-top: 10rem;
   min-width: 22.5rem;
+  color: #fff;
 }
 
 .sub-heading {
   font-size: 1.6rem;
   min-width: 22.5rem;
+  color: #fff;
 }

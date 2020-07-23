@@ -2,23 +2,37 @@
   margin-top: 6rem;
 
   &__box {
+    // border-radius: 1%;
+    width: 90%;
+    padding: 1rem;
+    margin-left: .3rem;
     text-align: center;
+    border: 2px solid #fff;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    box-shadow: 10px 10px 13px -6px rgba(170, 204, 255, 1);
+    // border-bottom: .3rem solid #43b8ff;
+
   }
 
   &__header {
     font-size: 2.7rem;
     text-align: center;
     min-width: 22.5rem;
+    margin-bottom: 3rem;
+    color: #fff;
   }
 
   &__project-name {
     margin-top: 3rem;
     font-size: 2rem;
+    color: #fff;
   }
 
   &__techstack-header {
     font-size: 2rem;
     margin: 1rem 0;
+    color: #fff;
   }
 
   &__project-links {
@@ -33,15 +47,17 @@
 
   &__project-links li>a {
     text-decoration: none;
-    color: #000;
-    border: 3px solid #000;
+    color: #fff;
+    border: 3px solid #fff;
     padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
   }
 
   &__project-description {
     padding: 1.2rem;
     line-height: 1.5;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color: #fff;
   }
 
   &__project-image {
@@ -56,7 +72,8 @@
     grid-gap: 1rem;
 
     li {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+      color: #fff;
     }
   }
 }

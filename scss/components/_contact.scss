@@ -1,0 +1,63 @@
+.contact {
+  margin: 5rem 0;
+
+  &__header {
+    font-size: 2.7rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__resume {
+    font-size: 2rem;
+    margin-top: 2rem;
+    border: .3rem solid #fff;
+    padding: .8rem;
+    width: 51%;
+    margin-left: 6rem;
+    text-align: center;
+
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &__info-box {
+    margin-top: 2.5rem;
+
+    &__social-media {
+      padding: 1.2rem;
+      line-height: 1.5;
+      font-size: 1.2rem;
+      text-align: center;
+
+      &__linkedin-header {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+
+      &__github-header {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+
+      &__linkedin {
+        color: #0077b5;
+      }
+
+      &__github {
+        color: #fff;
+        margin-left: .5rem;
+      }
+
+      a {
+        text-decoration: none;
+        // color: rgb(84, 31, 168);
+        color: #fff;
+        font-size: 1.3rem;
+
+      }
+    }
+  }
+}
