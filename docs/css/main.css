@@ -194,7 +194,7 @@ body {
     .menu-button.close .button-line:nth-child(3) {
       transform: rotate(-45deg) translate(0.7rem, -0.6rem);
       background: #000; }
-  @media (min-width: 48em) {
+  @media (min-width: 47em) {
     .menu-button {
       padding: 0.4rem; } }
 
@@ -204,7 +204,7 @@ header {
   width: 100%;
   min-width: 22.5rem;
   background: #aaccff; }
-  @media (min-width: 48em) {
+  @media (min-width: 47em) {
     header {
       min-width: 48rem; } }
 
@@ -217,10 +217,10 @@ header {
     text-decoration: none;
     font-size: 2rem;
     color: #000; }
-    @media (min-width: 48em) {
+    @media (min-width: 47em) {
       .logo a {
         font-size: 2.5rem; } }
-  @media (min-width: 48em) {
+  @media (min-width: 47em) {
     .logo {
       min-width: 48rem; } }
 
@@ -238,7 +238,7 @@ main {
     main .home__resume a {
       text-decoration: none;
       color: #fff; }
-    @media (min-width: 48em) {
+    @media (min-width: 47em) {
       main .home__resume {
         margin-left: 11rem;
         font-size: 2.5rem;
@@ -248,7 +248,7 @@ main {
     main .social-media a {
       font-size: 1.5rem;
       text-decoration: none; }
-      @media (min-width: 48em) {
+      @media (min-width: 47em) {
         main .social-media a {
           font-size: 2rem; } }
     main .social-media__github {
@@ -256,10 +256,10 @@ main {
       margin-right: 1.5rem; }
     main .social-media__linkedin {
       color: #0077b5; }
-    @media (min-width: 48em) {
+    @media (min-width: 47em) {
       main .social-media {
         margin-right: 1rem; } }
-  @media (min-width: 48em) {
+  @media (min-width: 47em) {
     main {
       min-width: 48rem; } }
 
@@ -269,7 +269,7 @@ main {
   margin-top: 10rem;
   min-width: 22.5rem;
   color: #fff; }
-  @media (min-width: 48em) {
+  @media (min-width: 47em) {
     .main-heading {
       font-size: 3rem; } }
 
@@ -277,7 +277,7 @@ main {
   font-size: 1.6rem;
   min-width: 22.5rem;
   color: #fff; }
-  @media (min-width: 48em) {
+  @media (min-width: 47em) {
     .sub-heading {
       font-size: 2.3rem; } }
 
@@ -291,7 +291,7 @@ main {
     margin-bottom: 9rem;
     margin-left: 1rem;
     box-shadow: -2px 3px 35px 8px #9da5c7; }
-    @media (min-width: 48em) {
+    @media (min-width: 47em) {
       .projects__box {
         margin-left: 2.3rem; } }
   .projects__header {
@@ -376,7 +376,7 @@ main {
     .contact__resume a {
       text-decoration: none;
       color: #fff; }
-    @media (min-width: 48em) {
+    @media (min-width: 47em) {
       .contact__resume {
         min-width: 50%;
         margin-left: 12rem; } }
