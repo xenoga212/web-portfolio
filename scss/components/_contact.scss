@@ -12,7 +12,7 @@
     margin-top: 2rem;
     border: .3rem solid #fff;
     padding: .8rem;
-    width: 51%;
+    max-width: 51%;
     margin-left: 6rem;
     text-align: center;
 
@@ -20,6 +20,11 @@
     a {
       text-decoration: none;
       color: #fff;
+    }
+
+    @include respond(tablet-portrait) {
+      min-width: 50%;
+      margin-left: 12rem;
     }
   }
 

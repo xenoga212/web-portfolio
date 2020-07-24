@@ -2,10 +2,8 @@
   margin-top: 6rem;
 
   &__box {
-    // border-radius: 1%;
     width: 90%;
     padding: 1rem;
-    margin-left: .3rem;
     text-align: center;
     border: 2px solid #fff;
     margin-bottom: 9rem;
@@ -15,6 +13,9 @@
     // box-shadow: 10px 10px 13px -6px rgba(170, 204, 255, 1);
     // border-bottom: .3rem solid #43b8ff;
 
+    @include respond(tablet-portrait) {
+      margin-left: 2.3rem;
+    }
   }
 
   &__header {

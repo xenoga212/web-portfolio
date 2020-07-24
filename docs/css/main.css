@@ -194,6 +194,9 @@ body {
     .menu-button.close .button-line:nth-child(3) {
       transform: rotate(-45deg) translate(0.7rem, -0.6rem);
       background: #000; }
+  @media (min-width: 48em) {
+    .menu-button {
+      padding: 0.4rem; } }
 
 header {
   position: fixed;
@@ -201,6 +204,9 @@ header {
   width: 100%;
   min-width: 22.5rem;
   background: #aaccff; }
+  @media (min-width: 48em) {
+    header {
+      min-width: 48rem; } }
 
 .logo {
   display: flex;
@@ -211,6 +217,12 @@ header {
     text-decoration: none;
     font-size: 2rem;
     color: #000; }
+    @media (min-width: 48em) {
+      .logo a {
+        font-size: 2.5rem; } }
+  @media (min-width: 48em) {
+    .logo {
+      min-width: 48rem; } }
 
 main {
   text-align: center;
@@ -221,21 +233,35 @@ main {
     margin-top: 2rem;
     border: .3rem solid #fff;
     padding: .8rem;
-    width: 51%;
+    max-width: 51%;
     margin-left: 6rem; }
     main .home__resume a {
       text-decoration: none;
       color: #fff; }
+    @media (min-width: 48em) {
+      main .home__resume {
+        margin-left: 11rem;
+        font-size: 2.5rem;
+        margin-bottom: 1rem; } }
   main .social-media {
     padding: 1.3rem; }
     main .social-media a {
       font-size: 1.5rem;
       text-decoration: none; }
+      @media (min-width: 48em) {
+        main .social-media a {
+          font-size: 2rem; } }
     main .social-media__github {
       color: #fff;
       margin-right: 1.5rem; }
     main .social-media__linkedin {
       color: #0077b5; }
+    @media (min-width: 48em) {
+      main .social-media {
+        margin-right: 1rem; } }
+  @media (min-width: 48em) {
+    main {
+      min-width: 48rem; } }
 
 .main-heading {
   font-size: 2.3rem;
@@ -243,23 +269,31 @@ main {
   margin-top: 10rem;
   min-width: 22.5rem;
   color: #fff; }
+  @media (min-width: 48em) {
+    .main-heading {
+      font-size: 3rem; } }
 
 .sub-heading {
   font-size: 1.6rem;
   min-width: 22.5rem;
   color: #fff; }
+  @media (min-width: 48em) {
+    .sub-heading {
+      font-size: 2.3rem; } }
 
 .projects {
   margin-top: 6rem; }
   .projects__box {
     width: 90%;
     padding: 1rem;
-    margin-left: .3rem;
     text-align: center;
     border: 2px solid #fff;
     margin-bottom: 9rem;
     margin-left: 1rem;
     box-shadow: -2px 3px 35px 8px #9da5c7; }
+    @media (min-width: 48em) {
+      .projects__box {
+        margin-left: 2.3rem; } }
   .projects__header {
     font-size: 2.7rem;
     text-align: center;
@@ -336,12 +370,16 @@ main {
     margin-top: 2rem;
     border: .3rem solid #fff;
     padding: .8rem;
-    width: 51%;
+    max-width: 51%;
     margin-left: 6rem;
     text-align: center; }
     .contact__resume a {
       text-decoration: none;
       color: #fff; }
+    @media (min-width: 48em) {
+      .contact__resume {
+        min-width: 50%;
+        margin-left: 12rem; } }
   .contact__info-box {
     margin-top: 2.5rem; }
     .contact__info-box__social-media {

@@ -8,12 +8,18 @@ main {
     margin-top: 2rem;
     border: .3rem solid #fff;
     padding: .8rem;
-    width: 51%;
+    max-width: 51%;
     margin-left: 6rem;
 
     a {
       text-decoration: none;
       color: #fff;
+    }
+
+    @include respond(tablet-portrait) {
+      margin-left: 11rem;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -23,6 +29,10 @@ main {
     a {
       font-size: 1.5rem;
       text-decoration: none;
+
+      @include respond(tablet-portrait) {
+        font-size: 2rem;
+      }
 
     }
 
@@ -34,6 +44,14 @@ main {
     &__linkedin {
       color: #0077b5;
     }
+
+    @include respond(tablet-portrait) {
+      margin-right: 1rem;
+    }
+  }
+
+  @include respond(tablet-portrait) {
+    min-width: 48rem;
   }
 }
 
@@ -43,10 +61,18 @@ main {
   margin-top: 10rem;
   min-width: 22.5rem;
   color: #fff;
+
+  @include respond(tablet-portrait) {
+    font-size: 3rem;
+  }
 }
 
 .sub-heading {
   font-size: 1.6rem;
   min-width: 22.5rem;
   color: #fff;
+
+  @include respond(tablet-portrait) {
+    font-size: 2.3rem;
+  }
 }
