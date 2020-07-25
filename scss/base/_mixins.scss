@@ -1,7 +1,13 @@
 @mixin respond($breakpoint) {
   @if $breakpoint==tablet-portrait {
-    @media (min-width: 47em) {
-      @content
+    @media (min-width: 47.6em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet-big {
+    @media (min-width: 64em) {
+      @content;
     }
   }
 }

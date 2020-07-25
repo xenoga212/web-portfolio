@@ -23,8 +23,13 @@
     }
 
     @include respond(tablet-portrait) {
-      min-width: 50%;
+      width: 50%;
       margin-left: 12rem;
+    }
+
+    @include respond(tablet-big) {
+      margin-left: 30rem;
+      width: 30%;
     }
   }
 

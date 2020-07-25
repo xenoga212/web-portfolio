@@ -10,11 +10,12 @@
     margin-left: 1rem;
     box-shadow: -2px 3px 35px 8px rgba(157, 165, 199, 1);
 
-    // box-shadow: 10px 10px 13px -6px rgba(170, 204, 255, 1);
-    // border-bottom: .3rem solid #43b8ff;
-
     @include respond(tablet-portrait) {
       margin-left: 2.3rem;
+    }
+
+    @include respond(tablet-big) {
+      margin-left: 4rem;
     }
   }
 
@@ -24,24 +25,36 @@
     min-width: 22.5rem;
     margin-bottom: 3rem;
     color: #fff;
+
+    @include respond(tablet-big) {
+      font-size: 3.4rem;
+    }
   }
 
   &__project-name {
-    margin-top: 3rem;
+    margin: 2.5rem 0;
     font-size: 2rem;
     color: #fff;
+
+    @include respond(tablet-big) {
+      font-size: 2.7rem;
+    }
   }
 
   &__techstack-header {
     font-size: 2rem;
     margin: 1rem 0;
     color: #fff;
+
+    @include respond(tablet-big) {
+      font-size: 2.7rem;
+    }
   }
 
   &__project-links {
     display: flex;
     justify-content: space-around;
-    margin: 2.5rem 0;
+    margin: 4.5rem 0;
   }
 
   &__project-links li {
@@ -54,6 +67,10 @@
     border: 3px solid #fff;
     padding: 0.9rem;
     font-size: 1.5rem;
+
+    @include respond(tablet-big) {
+      font-size: 1.8rem;
+    }
   }
 
   &__project-description {
@@ -61,12 +78,17 @@
     line-height: 1.5;
     font-size: 1.3rem;
     color: #fff;
+
+    @include respond(tablet-big) {
+      font-size: 1.7rem;
+    }
   }
 
   &__project-image {
     width: 85%;
     height: 50%;
-    margin-top: 1.5rem;
+    margin: 2rem 0;
+
   }
 
   &__project-techstack {
@@ -77,6 +99,10 @@
     li {
       font-size: 1.4rem;
       color: #fff;
+
+      @include respond(tablet-big) {
+        font-size: 1.7rem;
+      }
     }
   }
 }
