@@ -10,4 +10,10 @@
       @content;
     }
   }
+
+  @if $breakpoint==laptop {
+    @media (min-width: 80em) {
+      @content;
+    }
+  }
 }

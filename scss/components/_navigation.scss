@@ -19,7 +19,6 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    // background: #fff;
     background: #222233;
     opacity: 0.9;
     min-width: 22.5rem;
@@ -34,7 +33,28 @@
     li a {
       text-decoration: none;
       color: #fff;
+
+      @include respond(laptop) {
+        color: #000;
+        margin: 0 .5rem;
+      }
     }
+
+    &--laptop {
+
+      @include respond(laptop) {
+        flex-flow: initial;
+        background: inherit;
+        align-items: inherit;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  @include respond(laptop) {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
   }
 }
 
@@ -79,6 +99,10 @@
 
   @include respond(tablet-portrait) {
     padding: 0.4rem;
+  }
+
+  @include respond(laptop) {
+    display: none;
   }
 }
 

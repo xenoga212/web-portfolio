@@ -26,6 +26,10 @@ main {
       margin-left: 21rem;
       font-size: 3rem;
     }
+
+    @include respond(laptop) {
+      margin-left: 19rem;
+    }
   }
 
   .social-media {

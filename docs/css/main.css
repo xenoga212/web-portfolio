@@ -172,6 +172,21 @@ body {
     .navigation__ul li a {
       text-decoration: none;
       color: #fff; }
+      @media (min-width: 80em) {
+        .navigation__ul li a {
+          color: #000;
+          margin: 0 .5rem; } }
+    @media (min-width: 80em) {
+      .navigation__ul--laptop {
+        flex-flow: initial;
+        background: inherit;
+        align-items: inherit;
+        justify-content: flex-end; } }
+  @media (min-width: 80em) {
+    .navigation {
+      visibility: visible;
+      opacity: 1;
+      position: fixed; } }
 
 .menu-button {
   position: absolute;
@@ -197,6 +212,9 @@ body {
   @media (min-width: 47.6em) {
     .menu-button {
       padding: 0.4rem; } }
+  @media (min-width: 80em) {
+    .menu-button {
+      display: none; } }
 
 header {
   position: fixed;
@@ -247,6 +265,9 @@ main {
       main .home__resume {
         margin-left: 21rem;
         font-size: 3rem; } }
+    @media (min-width: 80em) {
+      main .home__resume {
+        margin-left: 19rem; } }
   main .social-media {
     padding: 1.3rem; }
     main .social-media a {
@@ -370,6 +391,12 @@ main {
       @media (min-width: 64em) {
         .projects__project-techstack li {
           font-size: 1.7rem; } }
+  @media (min-width: 80em) {
+    .projects__container {
+      padding: 3rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem; } }
 
 .about {
   margin: 3rem 0; }
@@ -418,6 +445,9 @@ main {
       .contact__resume {
         margin-left: 30rem;
         width: 30%; } }
+    @media (min-width: 80em) {
+      .contact__resume {
+        margin-left: 28rem; } }
   .contact__info-box {
     margin-top: 2.5rem; }
     .contact__info-box__social-media {
