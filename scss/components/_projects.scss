@@ -17,8 +17,16 @@
       margin-left: 4rem;
     }
 
+    @include firefox-only {
+
+      @include respond(laptop) {
+        margin-left: 1rem;
+      }
+    }
+
     @include respond(laptop) {
       margin-bottom: 0;
+      margin-left: 1rem;
     }
   }
 
@@ -108,6 +116,18 @@
     height: 50%;
     margin: 2rem 0;
 
+    @include firefox-only {
+
+      @include respond(laptop) {
+        width: 100%;
+        height: 30%;
+      }
+
+      @include respond(monitor) {
+        width: 100%;
+        height: 45%;
+      }
+    }
   }
 
   &__project-techstack {
