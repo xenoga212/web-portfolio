@@ -10,6 +10,10 @@
     text-align: center;
 
     &:hover {
+      @include respond(laptop) {
+        border: 3px solid #0077b5;
+      }
+
       @include respond(monitor) {
         border: 3px solid #0077b5;
       }

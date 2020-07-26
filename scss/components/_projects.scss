@@ -5,7 +5,6 @@
     width: 90%;
     padding: 1rem;
     text-align: center;
-    border: 2px solid #fff;
     margin-bottom: 9rem;
     margin-left: 1rem;
     box-shadow: -2px 3px 35px 8px rgba(157, 165, 199, 1);
@@ -16,6 +15,10 @@
 
     @include respond(tablet-big) {
       margin-left: 4rem;
+    }
+
+    @include respond(laptop) {
+      margin-bottom: 0;
     }
   }
 
@@ -73,6 +76,10 @@
     }
 
     &:hover {
+      @include respond(laptop) {
+        border: 3px solid #0077b5;
+      }
+
       @include respond(monitor) {
         border: 3px solid #0077b5;
       }
@@ -87,6 +94,12 @@
 
     @include respond(tablet-big) {
       font-size: 1.7rem;
+    }
+
+    @include respond(laptop) {
+      font-size: 1.3rem;
+      line-height: 1.9;
+      padding: .9rem;
     }
   }
 

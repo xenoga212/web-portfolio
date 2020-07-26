@@ -265,6 +265,9 @@ main {
     main .home__resume a {
       text-decoration: none;
       color: #fff; }
+    @media (min-width: 80em) {
+      main .home__resume:hover {
+        border: 3px solid #0077b5; } }
     @media (min-width: 120em) {
       main .home__resume:hover {
         border: 3px solid #0077b5; } }
@@ -337,7 +340,6 @@ main {
     width: 90%;
     padding: 1rem;
     text-align: center;
-    border: 2px solid #fff;
     margin-bottom: 9rem;
     margin-left: 1rem;
     box-shadow: -2px 3px 35px 8px #9da5c7; }
@@ -347,6 +349,9 @@ main {
     @media (min-width: 64em) {
       .projects__box {
         margin-left: 4rem; } }
+    @media (min-width: 80em) {
+      .projects__box {
+        margin-bottom: 0; } }
   .projects__header {
     font-size: 2.7rem;
     text-align: center;
@@ -385,6 +390,9 @@ main {
     @media (min-width: 64em) {
       .projects__project-links li > a {
         font-size: 1.8rem; } }
+    @media (min-width: 80em) {
+      .projects__project-links li > a:hover {
+        border: 3px solid #0077b5; } }
     @media (min-width: 120em) {
       .projects__project-links li > a:hover {
         border: 3px solid #0077b5; } }
@@ -396,6 +404,11 @@ main {
     @media (min-width: 64em) {
       .projects__project-description {
         font-size: 1.7rem; } }
+    @media (min-width: 80em) {
+      .projects__project-description {
+        font-size: 1.3rem;
+        line-height: 1.9;
+        padding: .9rem; } }
   .projects__project-image {
     width: 85%;
     height: 50%;
@@ -474,6 +487,9 @@ main {
     .contact__resume a {
       text-decoration: none;
       color: #fff; }
+    @media (min-width: 80em) {
+      .contact__resume:hover {
+        border: 3px solid #0077b5; } }
     @media (min-width: 120em) {
       .contact__resume:hover {
         border: 3px solid #0077b5; } }
@@ -514,6 +530,9 @@ main {
         text-decoration: none;
         color: #fff;
         font-size: 1.3rem; }
+        @media (min-width: 80em) {
+          .contact__info-box__social-media a:hover {
+            color: #0077b5; } }
         @media (min-width: 120em) {
           .contact__info-box__social-media a:hover {
             color: #0077b5; } }
@@ -527,6 +546,9 @@ main {
     border: .2rem solid #fff;
     padding: 1.5rem;
     text-align: center; }
+    @media (min-width: 80em) {
+      .footer__scroll-back-to-top:hover {
+        border: 3px solid #0077b5; } }
     @media (min-width: 120em) {
       .footer__scroll-back-to-top:hover {
         border: 3px solid #0077b5; } }
