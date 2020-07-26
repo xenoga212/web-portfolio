@@ -9,6 +9,12 @@
     padding: 1.5rem;
     text-align: center;
 
+    &:hover {
+      @include respond(monitor) {
+        border: 3px solid #0077b5;
+      }
+    }
+
     a {
       color: #fff;
       text-decoration: none;

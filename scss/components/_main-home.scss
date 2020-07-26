@@ -16,6 +16,12 @@ main {
       color: #fff;
     }
 
+    &:hover {
+      @include respond(monitor) {
+        border: 3px solid #0077b5;
+      }
+    }
+
     @include respond(tablet-portrait) {
       margin-left: 12rem;
       font-size: 2.5rem;
@@ -29,6 +35,11 @@ main {
 
     @include respond(laptop) {
       margin-left: 19rem;
+    }
+
+    @include respond(monitor) {
+      margin-left: 44rem;
+      width: 27%;
     }
   }
 

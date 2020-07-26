@@ -37,6 +37,7 @@
       @include respond(laptop) {
         color: #000;
         margin: 0 .5rem;
+        font-size: 2rem;
       }
     }
 
@@ -47,8 +48,11 @@
         background: inherit;
         align-items: inherit;
         justify-content: flex-end;
+        height: auto;
       }
     }
+
+
   }
 
   @include respond(laptop) {
@@ -131,6 +135,17 @@ header {
 
     @include respond(tablet-portrait) {
       font-size: 2.5rem;
+    }
+
+    @include respond(monitor) {
+      font-size: 3rem;
+      padding: .5rem;
+    }
+
+    &:hover {
+      @include respond(monitor) {
+        cursor: pointer;
+      }
     }
   }
 
