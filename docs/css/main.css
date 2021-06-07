@@ -134,7 +134,7 @@ table {
   scroll-behavior: smooth; }
 
 body {
-  background: #222233; }
+  background: #222831; }
   body:after {
     content: '';
     position: absolute;
@@ -148,7 +148,7 @@ body {
   position: fixed;
   top: 0;
   min-width: 100%;
-  opacity: 0.9;
+  opacity: 1;
   visibility: hidden; }
   .navigation.show {
     visibility: visible; }
@@ -161,22 +161,35 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background: #222233;
-    opacity: 0.9;
+    background: #222831;
+    opacity: 1;
     min-width: 22.5rem; }
     .navigation__ul li {
       font-size: 1.8rem;
       margin: 0 3px;
       line-height: 1.5;
       font-size: 3.5rem; }
+      @media (min-width: 80em) {
+        .navigation__ul li {
+          margin-right: .5rem; } }
+
+@-moz-document url-prefix() {
+  @media (min-width: 120em) {
+    .navigation__ul li {
+      margin: .9rem 3px; } } }
     .navigation__ul li a {
       text-decoration: none;
-      color: #fff; }
+      color: #eeeeee; }
       @media (min-width: 80em) {
         .navigation__ul li a {
-          color: #000;
+          color: #eeeeee;
           margin: 0 .5rem;
-          font-size: 2rem; } }
+          font-size: 2rem;
+          margin-right: 2rem; } }
+    @media (min-width: 80em) {
+      .navigation__ul li a:hover {
+        transition: .4s;
+        color: #000; } }
     @media (min-width: 80em) {
       .navigation__ul--laptop {
         flex-flow: initial;
@@ -223,7 +236,7 @@ header {
   z-index: 2;
   width: 100%;
   min-width: 22.5rem;
-  background: #aaccff; }
+  background: #00adb5; }
   @media (min-width: 47.6em) {
     header {
       min-width: 48rem; } }
@@ -236,7 +249,7 @@ header {
   .logo a {
     text-decoration: none;
     font-size: 2rem;
-    color: #000; }
+    color: #eeeeee; }
     @media (min-width: 47.6em) {
       .logo a {
         font-size: 2.5rem; } }

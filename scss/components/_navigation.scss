@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   min-width: 100%;
-  opacity: 0.9;
+  opacity: 1;
   visibility: hidden;
 
   &.show {
@@ -19,8 +19,8 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background: #222233;
-    opacity: 0.9;
+    background: #222831;
+    opacity: 1;
     min-width: 22.5rem;
 
     li {
@@ -28,16 +28,36 @@
       margin: 0 3px;
       line-height: 1.5;
       font-size: 3.5rem;
+
+      @include respond(laptop) {
+        margin-right: .5rem;
+
+      }
+
+      @include firefox-only {
+        @include respond(monitor) {
+          margin: .9rem 3px;
+        }
+      }
+
     }
 
     li a {
       text-decoration: none;
-      color: #fff;
+      color: #eeeeee;
 
       @include respond(laptop) {
-        color: #000;
+        color: #eeeeee;
         margin: 0 .5rem;
         font-size: 2rem;
+        margin-right: 2rem;
+      }
+    }
+
+    li a:hover {
+      @include respond(laptop) {
+        transition: .4s;
+        color: #000;
       }
     }
 
@@ -110,12 +130,14 @@
   }
 }
 
+// HEADER
+
 header {
   position: fixed;
   z-index: 2;
   width: 100%;
   min-width: 22.5rem;
-  background: rgb(170, 204, 255);
+  background: #00adb5;
 
   @include respond(tablet-portrait) {
     min-width: 48rem;
@@ -131,7 +153,7 @@ header {
   a {
     text-decoration: none;
     font-size: 2rem;
-    color: #000;
+    color: #eeeeee;
 
     @include respond(tablet-portrait) {
       font-size: 2.5rem;
@@ -153,3 +175,5 @@ header {
     min-width: 48rem;
   }
 }
+
+// HEADER END
