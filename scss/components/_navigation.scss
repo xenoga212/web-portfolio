@@ -45,6 +45,7 @@
     li a {
       text-decoration: none;
       color: #eeeeee;
+      transition: color .4s;
 
       @include respond(laptop) {
         color: #eeeeee;

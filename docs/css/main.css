@@ -179,7 +179,8 @@ body {
       margin: .9rem 3px; } } }
     .navigation__ul li a {
       text-decoration: none;
-      color: #eeeeee; }
+      color: #eeeeee;
+      transition: color .4s; }
       @media (min-width: 80em) {
         .navigation__ul li a {
           color: #eeeeee;
@@ -271,19 +272,21 @@ main {
   main .home__resume {
     font-size: 2rem;
     margin-top: 2rem;
-    border: .3rem solid #fff;
     padding: .8rem;
     width: 51%;
     margin-left: 6rem; }
     main .home__resume a {
       text-decoration: none;
-      color: #fff; }
+      color: #eeeeee;
+      transition: color .4s; }
     @media (min-width: 80em) {
-      main .home__resume:hover {
-        border: 3px solid #0077b5; } }
+      main .home__resume a:hover {
+        transition: .4s;
+        color: #00adb5; } }
     @media (min-width: 120em) {
-      main .home__resume:hover {
-        border: 3px solid #0077b5; } }
+      main .home__resume a:hover {
+        transition: .4s;
+        color: #00adb5; } }
     @media (min-width: 47.6em) {
       main .home__resume {
         margin-left: 12rem;
@@ -295,13 +298,14 @@ main {
         font-size: 3rem; } }
     @media (min-width: 80em) {
       main .home__resume {
-        margin-left: 19rem; } }
+        margin-left: 19.6rem; } }
     @media (min-width: 120em) {
       main .home__resume {
         margin-left: 44rem;
         width: 27%; } }
   main .social-media {
-    padding: 1.3rem; }
+    padding: 1.3rem;
+    margin-right: 1rem; }
     main .social-media a {
       font-size: 1.5rem;
       text-decoration: none; }

@@ -6,23 +6,27 @@ main {
   .home__resume {
     font-size: 2rem;
     margin-top: 2rem;
-    border: .3rem solid #fff;
+    // border: .3rem solid #fff;
     padding: .8rem;
     width: 51%;
     margin-left: 6rem;
 
     a {
       text-decoration: none;
-      color: #fff;
+      color: #eeeeee;
+      transition: color .4s;
     }
 
-    &:hover {
+    a:hover {
       @include respond(laptop) {
-        border: 3px solid #0077b5;
+        transition: .4s;
+        color: #00adb5;
+
       }
 
       @include respond(monitor) {
-        border: 3px solid #0077b5;
+        transition: .4s;
+        color: #00adb5;
       }
     }
 
@@ -38,8 +42,11 @@ main {
     }
 
     @include respond(laptop) {
-      margin-left: 19rem;
+      margin-left: 19.6rem;
+      // width: 25%;
     }
+
+
 
     @include respond(monitor) {
       margin-left: 44rem;
@@ -49,6 +56,7 @@ main {
 
   .social-media {
     padding: 1.3rem;
+    margin-right: 1rem;
 
     a {
       font-size: 1.5rem;
