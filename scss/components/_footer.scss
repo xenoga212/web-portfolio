@@ -5,23 +5,25 @@
 
   &__scroll-back-to-top {
     font-size: 1.8rem;
-    border: .2rem solid #fff;
     padding: 1.5rem;
     text-align: center;
 
-    &:hover {
-      @include respond(laptop) {
-        border: 3px solid #0077b5;
-      }
-
-      @include respond(monitor) {
-        border: 3px solid #0077b5;
-      }
-    }
-
     a {
-      color: #fff;
+      color: #eee;
       text-decoration: none;
+
+      &:hover {
+        @include respond(laptop) {
+          color: #00adb5;
+          transition: color .4s;
+        }
+
+        @include respond(monitor) {
+          color: #00adb5;
+          transition: color .4s;
+        }
+      }
     }
+
   }
 }

@@ -4,31 +4,31 @@
   &__header {
     font-size: 2.7rem;
     text-align: center;
-    color: #fff;
+    color: #eee;
   }
 
   &__resume {
     font-size: 2rem;
     margin-top: 2rem;
-    border: .3rem solid #fff;
     padding: .8rem;
-    max-width: 51%;
-    margin-left: 6rem;
+    margin-left: 0rem;
     text-align: center;
-
+    transition: color .4s;
 
     a {
       text-decoration: none;
-      color: #fff;
+      color: #eee;
     }
 
-    &:hover {
+    a:hover {
       @include respond(laptop) {
-        border: 3px solid #0077b5;
+        color: #00adb5;
+        transition: color .4s;
       }
 
       @include respond(monitor) {
-        border: 3px solid #0077b5;
+        color: #00adb5;
+        transition: color .4s;
       }
     }
 
@@ -63,12 +63,12 @@
 
       &__linkedin-header {
         font-size: 1.5rem;
-        color: #fff;
+        color: #eee;
       }
 
       &__github-header {
         font-size: 1.5rem;
-        color: #fff;
+        color: #eee;
       }
 
       &__linkedin {
@@ -76,22 +76,24 @@
       }
 
       &__github {
-        color: #fff;
+        color: #eee;
         margin-left: .5rem;
       }
 
       a {
         text-decoration: none;
-        color: #fff;
+        color: #eee;
         font-size: 1.3rem;
 
         &:hover {
           @include respond(laptop) {
-            color: #0077b5;
+            color: #00adb5;
+            transition: color .4s;
           }
 
           @include respond(monitor) {
-            color: #0077b5;
+            color: #00adb5;
+            transition: color .4s;
           }
         }
 
