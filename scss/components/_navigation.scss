@@ -19,7 +19,7 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background: #222831;
+    background: $background-color;
     opacity: 1;
     min-width: 22.5rem;
 
@@ -39,16 +39,15 @@
           margin: .9rem 3px;
         }
       }
-
     }
 
     li a {
       text-decoration: none;
-      color: #eeeeee;
-      transition: color .4s;
+      color: $font-color;
+      transition: $transition-color;
 
       @include respond(laptop) {
-        color: #eeeeee;
+        color: $font-color;
         margin: 0 .5rem;
         font-size: 2rem;
         margin-right: 2rem;
@@ -106,7 +105,7 @@
       // line 1 - Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(0.5rem, 0.5rem);
-        background: #000;
+        background: $font-color;
       }
 
       // line 2 - Hide
@@ -117,7 +116,7 @@
       // line 3 - Rotate
       &:nth-child(3) {
         transform: rotate(-45deg) translate(0.7rem, -0.6rem);
-        background: #000;
+        background: $font-color;
       }
     }
   }
@@ -138,7 +137,7 @@ header {
   z-index: 2;
   width: 100%;
   min-width: 22.5rem;
-  background: #00adb5;
+  background: $blue-color;
 
   @include respond(tablet-portrait) {
     min-width: 48rem;
@@ -154,7 +153,7 @@ header {
   a {
     text-decoration: none;
     font-size: 2rem;
-    color: #eeeeee;
+    color: $font-color;
 
     @include respond(tablet-portrait) {
       font-size: 2.5rem;

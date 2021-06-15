@@ -9,21 +9,24 @@
     text-align: center;
 
     a {
-      color: #eee;
       text-decoration: none;
-
-      &:hover {
-        @include respond(laptop) {
-          color: #00adb5;
-          transition: color .4s;
-        }
-
-        @include respond(monitor) {
-          color: #00adb5;
-          transition: color .4s;
-        }
-      }
+      color: $font-color;
+      border: 3px solid $font-color;
+      padding: 0.9rem;
+      font-size: 1.5rem;
+      transition: $transition-border;
     }
 
+    a:hover {
+      @include respond(laptop) {
+        border: $border-setup $blue-color;
+        transition: $transition-border;
+      }
+
+      @include respond(monitor) {
+        border: $border-setup $blue-color;
+        transition: $transition-border;
+      }
+    }
   }
 }

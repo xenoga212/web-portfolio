@@ -4,31 +4,36 @@
   &__header {
     font-size: 2.7rem;
     text-align: center;
-    color: #eee;
+    color: $font-color;
+    font-weight: bold;
   }
 
   &__resume {
     font-size: 2rem;
     margin-top: 2rem;
     padding: .8rem;
-    margin-left: 0rem;
+    margin-bottom: 1.5rem;
     text-align: center;
-    transition: color .4s;
+    transition: $transition-color;
 
     a {
       text-decoration: none;
-      color: #eee;
+      color: $font-color;
+      border: 3px solid $font-color;
+      padding: 0.9rem;
+      font-size: 1.5rem;
+      transition: border .4s;
     }
 
     a:hover {
       @include respond(laptop) {
-        color: #00adb5;
-        transition: color .4s;
+        border: 3px solid $blue-color;
+        transition: border .4s;
       }
 
       @include respond(monitor) {
-        color: #00adb5;
-        transition: color .4s;
+        border: 3px solid $blue-color;
+        transition: border .4s;
       }
     }
 
@@ -63,12 +68,14 @@
 
       &__linkedin-header {
         font-size: 1.5rem;
-        color: #eee;
+        color: $font-color;
+        margin-bottom: 1rem;
       }
 
       &__github-header {
         font-size: 1.5rem;
-        color: #eee;
+        color: $font-color;
+        margin-bottom: 1rem;
       }
 
       &__linkedin {
@@ -76,24 +83,24 @@
       }
 
       &__github {
-        color: #eee;
+        color: $font-color;
         margin-left: .5rem;
       }
 
       a {
         text-decoration: none;
-        color: #eee;
+        color: $font-color;
         font-size: 1.3rem;
 
         &:hover {
           @include respond(laptop) {
-            color: #00adb5;
-            transition: color .4s;
+            color: $blue-color;
+            transition: $transition-color;
           }
 
           @include respond(monitor) {
-            color: #00adb5;
-            transition: color .4s;
+            color: $blue-color;
+            transition: $transition-color;
           }
         }
 

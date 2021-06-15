@@ -7,7 +7,7 @@
     text-align: center;
     margin-bottom: 9rem;
     margin-left: 1rem;
-    box-shadow: -2px 3px 35px 8px rgba(157, 165, 199, 1);
+    box-shadow: -2px 3px 35px 8px $background-glow;
 
     @include respond(tablet-portrait) {
       margin-left: 2.3rem;
@@ -40,7 +40,10 @@
     text-align: center;
     min-width: 22.5rem;
     margin-bottom: 5.5rem;
-    color: #eee;
+    color: $font-color;
+    font-weight: bold;
+    font-variant: $small-cap;
+    letter-spacing: .7rem;
 
     @include respond(tablet-big) {
       font-size: 3.4rem;
@@ -50,7 +53,9 @@
   &__project-name {
     margin: 2.5rem 0;
     font-size: 2.8rem;
-    color: #eee;
+    color: $font-color;
+    font-variant: $small-cap;
+    font-weight: bold;
 
     @include respond(tablet-big) {
       font-size: 2.7rem;
@@ -59,8 +64,9 @@
 
   &__techstack-header {
     font-size: 2rem;
-    margin: 1rem 0;
-    color: #eee;
+    color: $font-color;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 
     @include respond(tablet-big) {
       font-size: 2.7rem;
@@ -79,8 +85,8 @@
 
   &__project-links li>a {
     text-decoration: none;
-    color: #eee;
-    border: 3px solid #eee;
+    color: $font-color;
+    border: $border-setup $font-color;
     padding: 0.9rem;
     font-size: 1.5rem;
     transition: border .4s;
@@ -91,11 +97,11 @@
 
     &:hover {
       @include respond(laptop) {
-        border: 3px solid #00adb5;
+        border: $border-setup $blue-color;
       }
 
       @include respond(monitor) {
-        border: 3px solid #00adb5;
+        border: $border-setup $blue-color;
         transition: border .4s;
       }
     }
@@ -103,9 +109,9 @@
 
   &__project-description {
     padding: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.9;
     font-size: 1.3rem;
-    color: #eee;
+    color: $font-color;
 
     @include respond(tablet-big) {
       font-size: 1.7rem;
@@ -123,6 +129,11 @@
     height: 25%;
     margin: 2rem 0;
 
+    @include respond(tablet-big) {
+      width: 50%;
+      height: 20%;
+    }
+
     @include firefox-only {
 
       @include respond(laptop) {
@@ -135,6 +146,7 @@
         height: 40%;
       }
     }
+
   }
 
   &__project-techstack {
@@ -150,7 +162,7 @@
 
     li {
       font-size: 1.4rem;
-      color: #eee;
+      color: $font-color;
 
       @include respond(tablet-big) {
         font-size: 1.7rem;

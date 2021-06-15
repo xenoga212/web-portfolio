@@ -144,6 +144,9 @@ body {
     height: 100%;
     z-index: -1; }
 
+html {
+  font-family: Arial, Helvetica, sans-serif; }
+
 .navigation {
   position: fixed;
   top: 0;
@@ -179,11 +182,11 @@ body {
       margin: .9rem 3px; } } }
     .navigation__ul li a {
       text-decoration: none;
-      color: #eeeeee;
-      transition: color .4s; }
+      color: #eee;
+      transition: color 0.4s; }
       @media (min-width: 80em) {
         .navigation__ul li a {
-          color: #eeeeee;
+          color: #eee;
           margin: 0 .5rem;
           font-size: 2rem;
           margin-right: 2rem; } }
@@ -219,12 +222,12 @@ body {
     transition: transform 0.3s ease-in-out; }
     .menu-button.close .button-line:nth-child(1) {
       transform: rotate(45deg) translate(0.5rem, 0.5rem);
-      background: #000; }
+      background: #eee; }
     .menu-button.close .button-line:nth-child(2) {
       opacity: 0; }
     .menu-button.close .button-line:nth-child(3) {
       transform: rotate(-45deg) translate(0.7rem, -0.6rem);
-      background: #000; }
+      background: #eee; }
   @media (min-width: 47.6em) {
     .menu-button {
       padding: 0.4rem; } }
@@ -250,7 +253,7 @@ header {
   .logo a {
     text-decoration: none;
     font-size: 2rem;
-    color: #eeeeee; }
+    color: #eee; }
     @media (min-width: 47.6em) {
       .logo a {
         font-size: 2.5rem; } }
@@ -269,44 +272,44 @@ main {
   text-align: center;
   overflow: hidden;
   min-width: 22.5rem;
-  margin-bottom: 13rem; }
+  margin-bottom: 8rem; }
   main .home__resume {
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin: auto;
     padding: .8rem;
     width: 51%;
-    margin-left: 6rem; }
+    font-variant: small-caps; }
     main .home__resume a {
       text-decoration: none;
-      color: #eeeeee;
-      transition: color .4s; }
+      color: #eee;
+      border: 3px solid #eee;
+      padding: 0.9rem;
+      font-size: 1.5rem;
+      transition: border 0.4s; }
     @media (min-width: 80em) {
       main .home__resume a:hover {
-        transition: .4s;
-        color: #00adb5; } }
+        border: 3px solid #00adb5;
+        transition: border 0.4s; } }
     @media (min-width: 120em) {
       main .home__resume a:hover {
-        transition: .4s;
-        color: #00adb5; } }
+        border: 3px solid #00adb5;
+        transition: border 0.4s; } }
     @media (min-width: 47.6em) {
       main .home__resume {
-        margin-left: 12rem;
+        margin: auto;
         font-size: 2.5rem;
         margin-bottom: 1rem; } }
     @media (min-width: 64em) {
       main .home__resume {
-        margin-left: 21rem;
-        font-size: 3rem; } }
-    @media (min-width: 80em) {
-      main .home__resume {
-        margin-left: 19.6rem; } }
+        margin: auto;
+        font-size: 2.3rem; } }
     @media (min-width: 120em) {
       main .home__resume {
         margin-left: 44rem;
         width: 27%; } }
   main .social-media {
     padding: 1.3rem;
-    margin-right: 1rem; }
+    margin-top: 1.5rem; }
     main .social-media a {
       font-size: 1.5rem;
       text-decoration: none; }
@@ -329,11 +332,11 @@ main {
       min-width: 48rem; } }
 
 .main-heading {
-  font-size: 2.3rem;
+  font-size: 3rem;
   padding: 1rem 0;
   margin-top: 10rem;
   min-width: 22.5rem;
-  color: #fff; }
+  color: #eee; }
   @media (min-width: 47.6em) {
     .main-heading {
       font-size: 3rem; } }
@@ -342,15 +345,19 @@ main {
       font-size: 3.7rem; } }
 
 .sub-heading {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   min-width: 22.5rem;
-  color: #fff; }
+  color: #eee;
+  font-variant: small-caps;
+  margin-bottom: 3rem;
+  margin-top: .5rem; }
   @media (min-width: 47.6em) {
     .sub-heading {
       font-size: 2.3rem; } }
   @media (min-width: 64em) {
     .sub-heading {
-      font-size: 3rem; } }
+      font-size: 2rem;
+      margin-top: 1rem; } }
 
 .projects {
   margin-top: 6rem; }
@@ -385,21 +392,27 @@ main {
     text-align: center;
     min-width: 22.5rem;
     margin-bottom: 5.5rem;
-    color: #eee; }
+    color: #eee;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: .7rem; }
     @media (min-width: 64em) {
       .projects__header {
         font-size: 3.4rem; } }
   .projects__project-name {
     margin: 2.5rem 0;
     font-size: 2.8rem;
-    color: #eee; }
+    color: #eee;
+    font-variant: small-caps;
+    font-weight: bold; }
     @media (min-width: 64em) {
       .projects__project-name {
         font-size: 2.7rem; } }
   .projects__techstack-header {
     font-size: 2rem;
-    margin: 1rem 0;
-    color: #eee; }
+    color: #eee;
+    margin-bottom: 3rem;
+    margin-top: 2rem; }
     @media (min-width: 64em) {
       .projects__techstack-header {
         font-size: 2.7rem; } }
@@ -428,7 +441,7 @@ main {
         transition: border .4s; } }
   .projects__project-description {
     padding: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.9;
     font-size: 1.3rem;
     color: #eee; }
     @media (min-width: 64em) {
@@ -443,6 +456,10 @@ main {
     width: 60%;
     height: 25%;
     margin: 2rem 0; }
+    @media (min-width: 64em) {
+      .projects__project-image {
+        width: 50%;
+        height: 20%; } }
 
 @-moz-document url-prefix() {
   @media (min-width: 80em) {
@@ -480,7 +497,9 @@ main {
   .about__header {
     font-size: 2.7rem;
     text-align: center;
-    color: #eee; }
+    color: #eee;
+    font-weight: bold;
+    font-variant: small-caps; }
     @media (min-width: 120em) {
       .about__header {
         font-size: 3.4rem; } }
@@ -500,20 +519,23 @@ main {
   .about__intro-header {
     margin: 0 1rem;
     font-size: 2rem;
-    color: #eee; }
+    color: #eee;
+    font-variant: small-caps; }
     @media (min-width: 120em) {
       .about__intro-header {
         font-size: 4rem; } }
   .about__skills-header {
-    margin: 0 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
     font-size: 2rem;
-    color: #eee; }
+    color: #eee;
+    font-variant: small-caps; }
     @media (min-width: 120em) {
       .about__skills-header {
         font-size: 4rem; } }
   .about__description {
     padding: 1.2rem;
-    line-height: 1.7;
+    line-height: 2.3rem;
     font-size: 1.2rem;
     color: #eee; }
     @media (min-width: 120em) {
@@ -528,25 +550,30 @@ main {
   .contact__header {
     font-size: 2.7rem;
     text-align: center;
-    color: #eee; }
+    color: #eee;
+    font-weight: bold; }
   .contact__resume {
     font-size: 2rem;
     margin-top: 2rem;
     padding: .8rem;
-    margin-left: 0rem;
+    margin-bottom: 1.5rem;
     text-align: center;
-    transition: color .4s; }
+    transition: color 0.4s; }
     .contact__resume a {
       text-decoration: none;
-      color: #eee; }
+      color: #eee;
+      border: 3px solid #eee;
+      padding: 0.9rem;
+      font-size: 1.5rem;
+      transition: border .4s; }
     @media (min-width: 80em) {
       .contact__resume a:hover {
-        color: #00adb5;
-        transition: color .4s; } }
+        border: 3px solid #00adb5;
+        transition: border .4s; } }
     @media (min-width: 120em) {
       .contact__resume a:hover {
-        color: #00adb5;
-        transition: color .4s; } }
+        border: 3px solid #00adb5;
+        transition: border .4s; } }
     @media (min-width: 47.6em) {
       .contact__resume {
         width: 50%;
@@ -571,10 +598,12 @@ main {
       text-align: center; }
       .contact__info-box__social-media__linkedin-header {
         font-size: 1.5rem;
-        color: #eee; }
+        color: #eee;
+        margin-bottom: 1rem; }
       .contact__info-box__social-media__github-header {
         font-size: 1.5rem;
-        color: #eee; }
+        color: #eee;
+        margin-bottom: 1rem; }
       .contact__info-box__social-media__linkedin {
         color: #0077b5; }
       .contact__info-box__social-media__github {
@@ -587,11 +616,11 @@ main {
         @media (min-width: 80em) {
           .contact__info-box__social-media a:hover {
             color: #00adb5;
-            transition: color .4s; } }
+            transition: color 0.4s; } }
         @media (min-width: 120em) {
           .contact__info-box__social-media a:hover {
             color: #00adb5;
-            transition: color .4s; } }
+            transition: color 0.4s; } }
 
 .footer {
   text-align: center;
@@ -602,13 +631,17 @@ main {
     padding: 1.5rem;
     text-align: center; }
     .footer__scroll-back-to-top a {
+      text-decoration: none;
       color: #eee;
-      text-decoration: none; }
-      @media (min-width: 80em) {
-        .footer__scroll-back-to-top a:hover {
-          color: #00adb5;
-          transition: color .4s; } }
-      @media (min-width: 120em) {
-        .footer__scroll-back-to-top a:hover {
-          color: #00adb5;
-          transition: color .4s; } }
+      border: 3px solid #eee;
+      padding: 0.9rem;
+      font-size: 1.5rem;
+      transition: border 0.4s; }
+    @media (min-width: 80em) {
+      .footer__scroll-back-to-top a:hover {
+        border: 3px solid #00adb5;
+        transition: border 0.4s; } }
+    @media (min-width: 120em) {
+      .footer__scroll-back-to-top a:hover {
+        border: 3px solid #00adb5;
+        transition: border 0.4s; } }

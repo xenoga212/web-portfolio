@@ -2,52 +2,46 @@ main {
   text-align: center;
   overflow: hidden;
   min-width: 22.5rem;
-  margin-bottom: 13rem;
+  margin-bottom: 8rem;
 
   .home__resume {
-    font-size: 2rem;
-    margin-top: 2rem;
-    // border: .3rem solid #fff;
+    font-size: 1.5rem;
+    margin: auto;
     padding: .8rem;
     width: 51%;
-    margin-left: 6rem;
+    font-variant: $small-cap;
 
     a {
       text-decoration: none;
-      color: #eeeeee;
-      transition: color .4s;
+      color: $font-color;
+      border: $border-setup $font-color;
+      padding: 0.9rem;
+      font-size: 1.5rem;
+      transition: $transition-border;
     }
 
     a:hover {
       @include respond(laptop) {
-        transition: .4s;
-        color: #00adb5;
-
+        border: $border-setup $blue-color;
+        transition: $transition-border;
       }
 
       @include respond(monitor) {
-        transition: .4s;
-        color: #00adb5;
+        border: $border-setup $blue-color;
+        transition: $transition-border;
       }
     }
 
     @include respond(tablet-portrait) {
-      margin-left: 12rem;
+      margin: auto;
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }
 
     @include respond(tablet-big) {
-      margin-left: 21rem;
-      font-size: 3rem;
+      margin: auto;
+      font-size: 2.3rem;
     }
-
-    @include respond(laptop) {
-      margin-left: 19.6rem;
-      // width: 25%;
-    }
-
-
 
     @include respond(monitor) {
       margin-left: 44rem;
@@ -57,7 +51,7 @@ main {
 
   .social-media {
     padding: 1.3rem;
-    margin-right: 1rem;
+    margin-top: 1.5rem;
 
     a {
       font-size: 1.5rem;
@@ -93,11 +87,11 @@ main {
 }
 
 .main-heading {
-  font-size: 2.3rem;
+  font-size: 3rem;
   padding: 1rem 0;
   margin-top: 10rem;
   min-width: 22.5rem;
-  color: #fff;
+  color: $font-color;
 
   @include respond(tablet-portrait) {
     font-size: 3rem;
@@ -109,15 +103,19 @@ main {
 }
 
 .sub-heading {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   min-width: 22.5rem;
-  color: #fff;
+  color: $font-color;
+  font-variant: $small-cap;
+  margin-bottom: 3rem;
+  margin-top: .5rem;
 
   @include respond(tablet-portrait) {
     font-size: 2.3rem;
   }
 
   @include respond(tablet-big) {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: 1rem;
   }
 }
